@@ -1,24 +1,22 @@
 {
 	"name": "Tressa",
-	"displayName": "Tressa",
+	"displayName": "Weather",
 	"description": "",
-	"version": "0.0.1",
+	"keywords": ["weather", "天气"],
+	"version": "1.0.0",
+	"publisher": "makcy",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"icon": "images/icon.png",
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
-	},
+	"contributes": {},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
@@ -33,8 +31,12 @@
 		"@types/vscode": "^1.41.0",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
 		"tslint": "^5.20.0",
+		"typescript": "^3.6.4",
 		"vscode-test": "^1.2.2"
+	},
+	"dependencies": {
+		"request": "^2.88.0",
+		"request-promise": "^4.2.5"
 	}
 }
