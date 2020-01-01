@@ -1,7 +1,7 @@
 {
-	"name": "Tressa",
+	"name": "tressa",
 	"displayName": "Weather",
-	"description": "",
+	"description": "Simple weather display plugin",
 	"keywords": ["weather", "天气"],
 	"version": "1.0.0",
 	"publisher": "makcy",
@@ -11,12 +11,19 @@
 	"categories": [
 		"Other"
 	],
-	"icon": "images/icon.png",
 	"activationEvents": [
-		"*"
+		"*",
+		"onCommand:weather.refresh"
 	],
 	"main": "./out/extension.js",
-	"contributes": {},
+	"contributes": {
+		"commands": [
+			{
+				"command": "weather.refresh",
+				"title": "Weather: refresh"
+			}
+		]
+	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
