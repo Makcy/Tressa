@@ -22,7 +22,28 @@
 				"command": "weather.refresh",
 				"title": "Weather: refresh"
 			}
-		]
+		],
+		"configuration": {
+			"type": "objecr",
+			"title": "Weather",
+			"properties": {
+				"weather.weather.display": {
+					"type": "boolean",
+					"default": true,
+					"description": "展示"
+				},
+				"weather.temperature.display": {
+					"type": "boolean",
+					"default": true,
+					"description": "展示"
+				},
+				"weather.city.display": {
+					"type": "boolean",
+					"default": true,
+					"description": "展示"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",

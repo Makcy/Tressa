@@ -11,10 +11,20 @@ let barItem: any;
 
 async function getWeatherData() {
 	let barStr = '获取天气失败';
+	const {weather, temperature, city: cityConfig} = vscode.workspace.getConfiguration('weather');
 	try {
 		const response = await request({url: URL, json: true});
 		const {city, weather:{day_condition, high_temperature, low_temperature}} = response.data;
-		barStr = `${city} ${day_condition} ${low_temperature}°c ~ ${high_temperature}°c `;
+		barStr = '';
+		if (cityConfig.display) {
+			barStr += `${city} `;
+		}
+		if (temperature.display) {
+			barStr += `${day_condition} `;
+		}
+		if (weather.display) {
+			barStr += `${low_temperature}°c ~ ${high_temperature}°c`;
+		}
 	} catch(error) {
 		vscode.window.showInformationMessage(error);
 	}

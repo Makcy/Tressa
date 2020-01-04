@@ -5,7 +5,6 @@
 ## Features
 - 支持主动刷新天气数据
 - 支持展示数据定制化
-- 支持国外天气
 
 ## Extension Settings
 
