@@ -2,7 +2,7 @@
 
 右下角简易天气展示小插件
 
-![demo](https://github.com/Makcy/Tressa/demo.png)
+![demo.png](https://i.loli.net/2020/01/05/tNFlcrfiOhLgVpj.png)
 
 ## Features
 - 支持主动刷新天气数据
