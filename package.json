@@ -5,6 +5,7 @@
 	"keywords": ["weather", "天气"],
 	"version": "1.0.0",
 	"publisher": "makcy",
+	"repository": "https://github.com/Makcy/Tressa.git",
 	"engines": {
 		"vscode": "^1.41.0"
 	},

@@ -1,4 +1,4 @@
-# Tressa README
+# Weather
 
 右下角简易天气展示小插件
 
