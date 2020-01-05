@@ -2,6 +2,8 @@
 
 右下角简易天气展示小插件
 
+![demo](https://github.com/Makcy/Tressa/demo.png)
+
 ## Features
 - 支持主动刷新天气数据
 - 支持展示数据定制化
