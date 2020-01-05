@@ -8,11 +8,6 @@
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `Weather.Weather.Display`: 显示 / 移除 天气
+* `Weather.Temperature.Display`: 显示 / 移除 气温
+* `Weather.City.Display`: 显示 / 移除 城市
