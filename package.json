@@ -3,7 +3,7 @@
 	"displayName": "Weather",
 	"description": "Simple weather display plugin",
 	"keywords": ["weather", "天气"],
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"publisher": "makcy",
 	"repository": "https://github.com/Makcy/Tressa.git",
 	"engines": {
@@ -12,6 +12,7 @@
 	"categories": [
 		"Other"
 	],
+	"icon": "icon.png",
 	"activationEvents": [
 		"*",
 		"onCommand:weather.refresh"
